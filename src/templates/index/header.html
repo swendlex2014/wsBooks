@@ -1,0 +1,34 @@
+<header class="header white-bg">
+  <div class="sidebar-toggle-box">
+    <div data-original-title="Toggle Navigation" data-placement="right" class="fa fa-bars tooltips"></div>
+  </div>
+  <a href="index.html" class="logo" >wSpecs<span>Books</span></a>
+
+  <div class="top-nav ">
+    {{# info}}
+    <ul class="nav pull-right top-menu">
+        <!-- <li>
+          <input type="text" class="form-control search" placeholder="Search">
+        </li> -->
+        <li class="dropdown">
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+            <img alt="" src="{{is}}" width="15">
+            <span class="username">{{t}}</span>
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu extended logout">
+           <div class="log-arrow-up"></div>
+           <ul class="nav nav-pills nav-stacked book-info">
+             <li>
+               <span><strong>Author</strong>: {{a}}</span>
+               <span><strong>Year of Publication</strong>: {{y}}</span>
+               <span><strong>Pages</strong>: {{p}}</span>
+               <span><strong>Published Edition</strong>: {{pe}}</span>
+             </li>
+           </ul>
+         </ul>
+       </li>
+     </ul>
+     {{/}}
+   </div>
+ </header>

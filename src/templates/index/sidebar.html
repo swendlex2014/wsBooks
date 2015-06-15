@@ -1,0 +1,14 @@
+<aside>
+	<div id="sidebar"  class="nav-collapse">
+		<ul class="sidebar-menu" id="nav-accordion">
+			{{# indexes}}
+			<li>
+				<a class="indexer" on-click="updateChapter">
+					<i class="fa fa-angle-right"></i>
+					<span>{{index(t)}}</span>
+				</a>
+			</li>
+			{{/}}
+		</ul>
+	</div>
+</aside>

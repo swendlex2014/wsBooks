@@ -1,0 +1,40 @@
+<section id="main-content">
+	<section class="wrapper site-min-height">
+		<div class="row">
+			<div class="col-sm-9 chapter">
+				<section class="hentry">
+					{{# process(chapter, info)}}
+					{{{ this }}}
+					{{/}}
+				</section>
+				<div class="extras">
+					{{# extras.p}}
+					<span class="prev" on-click="updateChapter">
+						<i class="fa fa-angle-left"></i>
+						<em>{{t}}</em>
+					</span>
+					{{/}}
+					{{# extras.n}}
+					<span class="next" on-click="updateChapter">
+						<em>{{t}}</em>
+						<i class="fa fa-angle-right"></i>
+					</span>
+					{{/}}
+				</div>
+			</div>
+			<div class="col-sm-3">
+				{{{getInfo(info)}}}
+			</div>
+		</div>
+		<h2 class="bracket">
+			<span class="text">Site design copyright &copy; 2015 <a href="http://wpecs.com">wSpecs</a></span>
+		</h2>
+		<footer class="credit brackets">
+			<div class="text">
+				<p></p>
+				<p>All publications remain the property of their respective owners. This website is for reference and education purposes only.</p>
+			</div>
+		</footer>
+	</section>
+</section>
+
